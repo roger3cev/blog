@@ -1,4 +1,63 @@
+<style>
+body, td{
+    font-family: Verdana,Geneva,Arial,Sans-serif; 
+    font-size: 13px; color: #333;
+    padding: 0px;
+    margin: 0px;
+    background-color: #222; }
+  .codesection{
+    padding: 2px 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: #fff;
+    font-family: monospace;
+    font-size: 12px;
+    }
+  .post{
+    padding: 8px 20px;
+    margin: 12px 72px;
+    max-width: 720px;
+    background-color: #fff; }
+  .posttitle{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold; }
+  .posttitle a{
+    text-decoration: none; }
+  a{
+    color: #000000 }
+  .pagetitle{
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 35px;
+    padding-left: 72px;
+    background-color: #fff; 
+    color: #000; }
+  .pagetitle a{
+    text-decoration: none; }
+  .authorname{
+    font-size: 12px;
+    color: #000;
+    font-weight: normal; }
+  .dateheader{
+    font-size: 11px;
+    font-weight: bold;
+    color: #333; }
+  h2{
+    margin-top: 18px;
+    font-size: 18px;
+  }
+</style>
+
   <!-- main title -->
-  <div class="pagetitle">I Write Code
+  <div class="pagetitle"><a href="http://derekmc.github.io/blog/">I Write Code</a>
   <div class="authorname">by Derek McDaniel</div>
   </div>
+
+<div class="post">
+
+  <div class="dateheader">2014 Nov 23</div>
+  <div class="posttitle" name="intro">
+    <a id=myfirstpost href="data:text/html;base64,PHN0eWxlPgpib2R5LCB0ZHsKICAgIGZvbnQtZmFtaWx5OiBWZXJkYW5hLEdlbmV2YSxBcmlhbCxTYW5zLXNlcmlmOyAKICAgIGZvbnQtc2l6ZTogMTNweDsgY29sb3I6ICMzMzM7CiAgICBwYWRkaW5nOiAwcHg7CiAgICBtYXJnaW46IDBweDsKICAgIGJhY2tncm91bmQtY29sb3I6ICMyMjI7IH0KICAuY29kZXNlY3Rpb257CiAgICBwYWRkaW5nOiAycHggMTJweDsKICAgIG1hcmdpbi1sZWZ0OiAxMnB4OwogICAgbWFyZ2luLXJpZ2h0OiAxMnB4OwogICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsKICAgIGZvbnQtZmFtaWx5OiBtb25vc3BhY2U7CiAgICBmb250LXNpemU6IDEycHg7CiAgICB9CiAgLnBvc3R7CiAgICBwYWRkaW5nOiA4cHggMjBweDsKICAgIG1hcmdpbjogMTJweCA3MnB4OwogICAgbWF4LXdpZHRoOiA3MjBweDsKICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7IH0KICAucG9zdHRpdGxlewogICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogICAgZm9udC1zaXplOiAyNHB4OwogICAgZm9udC13ZWlnaHQ6IGJvbGQ7IH0KICAucG9zdHRpdGxlIGF7CiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7IH0KICBhewogICAgY29sb3I6ICMwMDAwMDAgfQogIC5wYWdldGl0bGV7CiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7CiAgICBmb250LXNpemU6IDMycHg7CiAgICBmb250LXdlaWdodDogYm9sZDsKICAgIHBhZGRpbmc6IDM1cHg7CiAgICBwYWRkaW5nLWxlZnQ6IDcycHg7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmOyAKICAgIGNvbG9yOiAjMDAwOyB9CiAgLnBhZ2V0aXRsZSBhewogICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOyB9CiAgLmF1dGhvcm5hbWV7CiAgICBmb250LXNpemU6IDEycHg7CiAgICBjb2xvcjogIzAwMDsKICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7IH0KICAuZGF0ZWhlYWRlcnsKICAgIGZvbnQtc2l6ZTogMTFweDsKICAgIGZvbnQtd2VpZ2h0OiBib2xkOwogICAgY29sb3I6ICMzMzM7IH0KICBoMnsKICAgIG1hcmdpbi10b3A6IDE4cHg7CiAgICBmb250LXNpemU6IDE4cHg7CiAgfQo8L3N0eWxlPgoKICA8IS0tIG1haW4gdGl0bGUgLS0+CiAgPGRpdiBjbGFzcz0icGFnZXRpdGxlIj48YSBocmVmPSJodHRwOi8vZGVyZWttYy5naXRodWIuaW8vYmxvZy8iPkkgV3JpdGUgQ29kZTwvYT4KICA8ZGl2IGNsYXNzPSJhdXRob3JuYW1lIj5ieSBEZXJlayBNY0RhbmllbDwvZGl2PgogIDwvZGl2PgoKPGRpdiBjbGFzcz0icG9zdCI+Cgo8ZGl2IGNsYXNzPSJkYXRlaGVhZGVyIj4yMDE0IE5vdiAyMzwvZGl2Pgo8ZGl2IGNsYXNzPSJwb3N0dGl0bGUiIG5hbWU9ImludHJvIj4gPGEgaHJlZj0iaHR0cDovL2RlcmVrbWMuZ2l0aHViLmlvL2Jsb2cvaW5kZXguaHRtbCNteWZpcnN0cHJvZ3JhbSI+PGI+TXkgRmlyc3QgUHJvZ3JhbTwvYj48L2E+PC9kaXY+Cgo8cD4KSSBsb3ZlIFByb2dyYW1taW5nLgoKPHA+CkkgbG92ZSBNYXRoLgoKPHA+CldoZW4gSSB3YXMgYWJvdXQgMTIsIG15IERhZCBmaXJzdCBzaG93ZWQgbWUgaG93IHRvIHVzZSBhIEdXLUJhc2ljIGVkaXRvciB0byB3cml0ZSBiYXNpYyBwcm9ncmFtcy4gIEJldHdlZW4gdGhhdCBhbmQgaGlzIEdXLUJhc2ljIHJlZmVyZW5jZSBib29rLCBpdCB3YXNuJ3QgdG9vIGxvbmcgYmVmb3JlIEkgd2FzIG1ha2luZyB3b3JraW5nIHByb2dyYW1zLgoKPHA+CkluIGFkZGl0aW9uIHRvIEJhc2ljLCBteSBEYWQgdGF1Z2h0IG1lIGhvdyB0byB1c2UgYSBEZWxwaGkgSURFIHRvIG1ha2UgZ3VpIHByb2dyYW1zLiAgVG8gYmUgZmFpciwgSSBiYXJlbHkgdW5kZXJzdG9vZCBhbnl0aGluZyBhYm91dCB0aGUgUGFzY2FsIGxhbmd1YWdlLCBidXQgSSBjb3VsZCB1c2UgdGhlIElERSBHVUkgdG8gY3JlYXRlIGZvcm1zLCBncmFwaGljcywgYnV0dG9ucyBhbmQgdGltZXIgZXZlbnRzLiAgSSB3b3VsZCB0aGVuIGZpbGwgaW4gdGhlIGNvZGUgc3R1YnMgZ2VuZXJhdGVkIGJ5IHRoZSBJREUgd2l0aCB0aGUgY3VzdG9tIGJlaGF2aW9yIGFuZCBhbGdvcml0aG1zIEkgd2FudGVkLCBldmVuIHRob3VnaCBJIGhhZCBubyBpZGVhIHdoYXQgdGhlIHdvcmQgYWxnb3JpdGhtIG1lYW50LgoKPHA+Ckxvb2tpbmcgYmFjayBJIGFtIHN0aWxsIGltcHJlc3NlZCBieSB3aGF0IEkgY3JlYXRlZCBpbiBteSBmaXJzdCBmZXcgeWVhcnMgY29kaW5nLCB3aXRob3V0IGFueSBmb3JtYWwgaW5zdHJ1Y3Rpb24gb3IgdHJhaW5pbmcuCgo8cD4KSGVyZSBhcmUgc29tZSBvZiB0aGUgcHJvamVjdHMgSSBkaWQgZHVyaW5nIHRoYXQgdGltZSBwZXJpb2Q6Cgo8dWw+CiAgPGxpPk51bWJlciBndWVzc2luZyBnYW1lPC9saT4KICA8bGk+T3JpZ2luYWwgYWxnb3JpdGhtIGZvciBjb21wdXRpbmcgcGkgKHNpbWlsYXIgdG8gYXJjaGltZWRlcycgYWxnb3JpdGhtKTwvbGk+CiAgPGxpPlBvbmcgZ2FtZSB3aXRoIHNjb3Jla2VlcGluZywgY3VzdG9tIGdhbWUgbW9kZXMgc3VjaCBhcyBncmF2aXR5LCBhbmQgMyBBSSBkaWZmaWN1bHRpZXM8L2xpPgogIDxsaT5aZWxkYS1zdHlsZSBjb21iYXQgZ2FtZSwgZmVhdHVyaW5nIGEgZ3V5IHdpdGggYW4gZWxlY3RyaWMgc3dvcmQgYW5kIGJsb2JzIHRoYXQgd291bGQgY2hhc2U8L2xpPgogIDxsaT5Sb2JvdCBmaWdodGluZyBwbGF0Zm9ybSBnYW1lIHdpdGgganVtcGluZywgc2hvb3RpbmcsIGFuZCBwdXNoaW5nLjwvbGk+CjwvdWw+Cgo8L2Rpdj4K"><b>My First Program</b></a></div>
+</div>
