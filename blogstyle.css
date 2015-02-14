@@ -4,7 +4,8 @@ body{
   padding: 0px;
   margin: 0px;
   background-color: #bbb;
-  padding-bottom: 100px;}
+  background-image: -webkit-linear-gradient(top, #888 0%, #bbb 250px);
+  padding-bottom: 30px;}
 .codesection{
   padding: 2px 12px;
   margin-left: 12px;
