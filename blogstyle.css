@@ -1,9 +1,10 @@
-body, td{
+body{
   font-family: Verdana,Geneva,Arial,Sans-serif; 
   font-size: 13px; color: #333;
   padding: 0px;
   margin: 0px;
-  background-color: #bbb; }
+  background-color: #bbb;
+  padding-bottom: 100px;}
 .codesection{
   padding: 2px 12px;
   margin-left: 12px;
