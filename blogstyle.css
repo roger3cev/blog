@@ -25,7 +25,7 @@ body{
 .posttitle{
   text-decoration: none;
   font-size: 24px;
-  font-weight: bold; }
+  font-weight: normal; }
 .posttitle a{
   text-decoration: none; }
 a{
@@ -33,7 +33,7 @@ a{
 .pagetitle{
   text-decoration: none;
   font-size: 32px;
-  font-weight: normal;
+  font-weight: bold;
   padding: 35px;
   padding-left: 92px;
   background-color: #fff; 
