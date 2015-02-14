@@ -3,7 +3,7 @@ body, td{
   font-size: 13px; color: #333;
   padding: 0px;
   margin: 0px;
-  background-color: #aaa; }
+  background-color: #bbb; }
 .codesection{
   padding: 2px 12px;
   margin-left: 12px;
@@ -15,8 +15,8 @@ body, td{
   padding: 8px 20px;
   margin-left: 72px;
   margin-right: 72px;
-  margin-top: 4px;
-  margin-bottom: 8px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   max-width: 720px;
   background-color: #fff; }
 .posttitle{
