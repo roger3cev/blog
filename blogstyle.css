@@ -33,7 +33,7 @@ a{
 .pagetitle{
   text-decoration: none;
   font-size: 32px;
-  font-weight: bold;
+  font-weight: normal;
   padding: 35px;
   padding-left: 92px;
   background-color: #fff; 
@@ -46,7 +46,7 @@ a{
   font-weight: normal; }
 .dateheader{
   font-size: 11px;
-  font-weight: bold;
+  font-weight: normal;
   color: #333; }
 h2{
   margin-top: 18px;
