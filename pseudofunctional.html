@@ -1,0 +1,251 @@
+
+<link rel="stylesheet" type="text/css" href="http://derekmc.github.io/blog/blogstyle.css">
+
+<div class="pagetitle"><a href="http://derekmc.github.io/blog/">Code</a>
+  <div class="authorname">by Derek McDaniel</div>
+</div>
+ 
+<div class="post">
+ 
+<div class="dateheader">May 8, 2015</div>
+<div class="posttitle" name="intro"> <a href="http://derekmc.github.io/blog/index.html#pseudofunctional">Pseudofunctional Programming</a>
+</div>
+
+<h2>Functions</h2>
+
+<p>Functions were described by mathematics long before computers or calculators existed. The wikipedia article on <a href="http://en.wikipedia.org/w/index.php?title=Function_(mathematics)&oldid=661087760">mathematical functions</a> gives the following definition:
+
+<blockquote>
+A function is a relation between a set of inputs and a set of permissible outputs with the property that each input is related to exactly one output.
+</blockquote>
+<p>As programmers, we would say a function is a map. Inputs are <em>mapped</em> to outputs.
+
+<p>The special thing about a function, is that we don't need to explicitly store all the input/output relationships, instead we compute the output using the input.  We take the input and start transforming it.  After several steps <em>Voila!</em> we have the output, conjured out of thin air.  It works the same every time!!!
+
+<p>Now that we know what a function is, when do we use them programming?
+
+<p>The surprising answer is <em>all the time</em>.
+
+<p>What?
+
+<p>You heard me right: <em>All programming is functional programming!!!</em>
+
+<p><em>Wait, What? How? But. . .</em>
+
+<p>Let me explain.
+
+<p>All functions describe transformations, and every transformation can be described by a function.
+
+<p>Computers compute stuff, or <i>transform</i> information, and communicate or store the results.
+
+<p>Everything a computer does is some kind of transformation, whether it is transforming the magnetic bits on the hard drive into pixels on the screen or transforming keyboard presses into fiberoptic light streaming across the internet tubes.  It's not that one medium turns into another, it's that the information encoded in one medium is processed and encoded into another medium.
+
+<p>Remember that definition above? You need a set of permissible inputs and a set of permissible outputs.  When information is extracted from one medium, processed, and passed on to another medium(this is what computers do), the first medium represents the set of permissible inputs and the second medium represents the set of permissible outputs.
+
+<p>But in reality there is only one medium: <b>The Universe</b>.
+
+<p>And there is only one function: <b>Physics</b>.
+
+<blockquote>
+<pre style="font-size:150%"><code>universe<sub>t<sub>n+1</sub></sub> := physics(universe<sub>t<sub>n</sub></sub>)
+</code></pre>
+</blockquote>
+
+<p>Okay, okay, this gets into unknown philosophical, metaphysical, and sometimes religious territory.  But as a programmer, that is basically how we think about the world.
+
+<p> The exact configuration of the universe is an input to ultimate function, <em>Physics</em>, and then she does her beautiful work and we get a new configuration and that is our output.
+
+<p>Don't bother me with stupid trivial details like "But is time continuous or discrete?"  I am a programmer.  That is the way my universe works.
+
+<h2> Functional Programming </h2>
+
+<p>Now that we have proven the universe is input to a function being applied repeatedly, we can talk about details like functional programming.
+
+<p>Technically, changes that occur are transformations.  A function is just a description of a particular set of transformations.
+
+<p>The same transformation might be described by many different functions.
+
+<p>Two functions are equivalent if and only if they have the same input and output sets and the same inputs map to the same outputs.
+
+<p>While it's fun to think about all changes in the universe being dictated by a monolithic function called physics, we can disect this behavior to get more specific.
+
+<p>We only focus on the behavior we want to control programmatically.  We find functions that describe this behavior.
+
+<p>How do we do this?
+
+<p>By explicitly identifying <em>inputs</em> and <em>outputs</em> and describing their relationship:
+
+<ul>
+<li><em>Inputs</em> are everything that influence the result of a computation.</li>
+<li><em>Outputs</em> is everything that is changed when a computation is performed.</li>
+</ul>
+
+<p>Functional programming is a language paradigm that enforces precise identification of inputs and outputs for every computation performed.
+
+
+<h2>Functional Programming Challenges</h2>
+
+<p>Functional programming is pretty cool, but it has strict rules that can be hard to get used to.
+
+<p>Initially, it may be hard to visualize all computations as functions, but that is a skill that can be learned.
+
+<h3>Immutable Memory</h3>
+<p>Functional programming places strict constraints on the way you use memory.
+
+<p>The functional programmer sees all memory as immutable.  Instead of modifying memory, you are using an input to compute a new output.  This can make working with large datastructures either inefficient or challenging.  Either you have to copy them repeatedly, or you have to identify when they can be "garbage collected", or you completely rethink the way you are working with data.
+
+<p>In my experience this is not always easy.  Some functional programmers might disagree.  I am not that skillful.
+
+<h3>IO Headaches</h3>
+
+<p>Because io modifies external things and uses external input to influence future computations, io is a big deal in functional programming.  You have to be careful where, when and how you perform io.
+
+<h3>Adoption, Environments, and Libraries</h3>
+<p>In my opinion, these challenges have prevented functional programming from realizing widespread adoption.
+
+<p>In programming, adoption is a big deal.
+
+<p>Without sufficient usage by programmers, you won't get a rich ecosystem of libraries.
+
+<p>Your tools won't be updated to new platforms and environments as quickly.
+
+<p>This can create a cyclical effect where less adoption now means less adoption in the future.  How can we break this viscious cycle?
+
+<p>Many fans of functional programming will likely point out that many tools are well maintained, work in modern environments and have a diverse selection of libraries available.
+
+<p>While that may be true, the functional programming community is so diverse and fractured, that it can be hard for newcomers to make sense of it all.  What language should I choose and how will that affect my choice of platform and libraries?
+
+<p>This is a challenge in any kind of programming, but especially when evaluating functional programming tools.
+
+<p>Functional programmers are free spirits and independent thinkers.  Lisp has been described as a language for defining programming languages.  No wonder there are like a bajillion languages out there to chooose from.
+
+<p>Paul Graham is an avid evangelist for functional programming.
+
+<p>He is famous for starting a succesful online store in the early days of the internet using functional programming. He explains that in this article:
+
+<p><a href="http://www.paulgraham.com/avg.html">Beating the averages</a>
+
+<p>How can we reap the benefits of the mathematical rigor and abstract power of functional programming without limiting our choice of tools and environment?
+
+<h2>Pseudofunctional Programming</h2>
+
+<p>Pseudofunctional programming is my term for any set of techniques you use to try to be functional in a non-functional programming language.
+
+<p>The techniques I have developed focus on explicitly identifying <em>inputs</em> and <em>outputs</em> so that your procedures match up with the mathematical definition of functions.
+
+<p>Some of these techniques are as simple as having a preferred ordering of parameters.
+
+<p>Let's get into it.
+
+<h3>Writing Procedures that are also Functions</h3>
+
+<p>Even if your entire program isn't functions, some of the procedures or subroutines can be completely functional.
+
+<p>This means that all permanent changes made by the procedure are stored in the return value.
+
+<p>Additionally, anything that might influence the behavior of a procedure should be passed as a parameter to that procedure.
+
+<p>Internally, our procedure might be written just like any other procedure.  We can use for loops and increment variables.  These state changes would be forbidden by strict functional programming.  Instead we allow state changes temporarily.
+
+<p>But every change that is not part of the return value needs to be discarded.
+
+<p>From the perspective of anyone using that procedure, it is completely functional.
+
+<p>This is fairly common good programming practice even in nonfunctional environments, but the ability to explicitly identify when a procedure matches the mathematical definition of a function can greatly empower the programmer.
+
+<p>The programmer can use that function with confidence.  He can clearly identify what influences the behavior of the computation and what things that computation changes when it is done.  This can make finding errors and bugs dramatically easier.
+
+<p>Of course, strict functional programming is nice because it <i>guarantees</i> your functions will follow these rules.  With pseudofunctional programming, you may think you have done this, but still have a mistake in your procedure that makes it violate these constraints.  Even still, pseudofunctional programming is a huge improvement over having no rules for tracking where state changes occur.
+
+
+<h3>Output parameters</h3>
+
+<p>If I really need to change an existing datastructure, instead of creating a new return value from scratch, I use what I call output parameters.
+
+<p>These parameters may look like an input, but in reality they serve as an output.
+
+<p>In some cases they could be both input and output.  The pseudofunctional programmer needs to keep track of this.
+
+<p>When we use output parameters, we must realize that the datastructure passed to that procedure is liable to change.  This means that the old value will exist no more.  Conceptually, we discard the original immutable object and replace it with a new one.
+
+<p>One challenge unique to pseudofunctional programming is keeping track of which procedures follow certain rules and when you may or may not use them.
+
+<p>If a functional procedure uses a parameter as an input but not an output, before using that input as an output parameter to another procedure from within your procedure you must make a new copy of any heap datastructures so as to not change the original value.
+
+<p>It's more challenging to describe these rules than to follow them, IMO.  Just keep track of when it's okay to change heap values and when it's not allowed.
+
+<p>By convention I place output parameters first.  In languages that specify a return type, the return type is usually written before the procedure name.  So it makes sense to have output parameters near the beginning of the parameters.  In c, functions like <code>strcpy(dest,src)</code> usually have their mutable parameter first.  Additionally, output parameters are not, or should not be optional parameters, which are placed last in most languages because they are optional.  
+
+<p>Normally, I like to limit myself to only one output parameter.  If I return a value, it should be the output parameter as well.
+
+<p>If you need to modify several objects within a procedure you can always wrap them in a single datastructure.  Functions always have only one output, wrapping the changed values into a single datastructure forces you to identify the output as a single comprehensive unit.  This can make your function definitions much more logical and intuitive.
+
+<p>I don't always follow this rule.  You can think of the output of a function as a tuple of several output parameters.  In the rare cases where I feel this is best, I use a special style convention to indicate which parameters are mutable output parameters.  All mutable parameters come first and don't have any whitespace between them to group them as a tuple:
+
+<blockquote>
+<code><pre>function f(out1,out2,out3, input1,input2,input3){}
+</pre></code>
+</blockquote>
+
+<p>As long as you are using this convention you can use it in other situations, like functions without mutable output parameters.
+
+<blockquote>
+<code><pre>function f( input1,input2,input3){
+    return g( input3,input2,input1);
+}
+</pre></code>
+</blockquote>
+
+You can see this convention in action in my [HtmlSandbox](https://github.com/derekmc/htmlsandbox/blob/gh-pages/index.html) project.
+
+
+<p>Like I said, this is not the preferred way, if you can wrap all output parameters into a single datastructure that is better.  Only the first parameter is mutable.
+
+<p>There may not be an obvious or intuitive way to combine output parameters into a single object.  That is when I use extra spaces in the parameter lists to indicate which parameters are mutable and which are pure inputs.
+
+
+<h3>Recycling</h3>
+
+<p>Output parameters lead to a closely related concept that I call <em>recycling</em>.
+
+<p>In javascript and other languages it may seem like the programmer has no obligation to manage memory.  The system provides a garbage collector, isn't that enough?  We shouldn't have to worry about memory leaks and allocations, right?
+
+<p>This could not be further from the truth.
+
+<p>Memory management is critical in the design of any performant application.
+
+<p>Holding onto old references and pointers can prevent objects from being garbage collected resulting in a memory leak.
+
+<p>Memory allocation is an expensive operation, and the programmer should try to reduce new memory allocations when practical.
+
+<p>Recycling is one method I use for dealing with these problems.
+
+<p>Recycling is exactly what it sounds like.  When you are finished with a datastructure, instead of discarding it, you reinitialize it and reuse it like a new object.
+
+<p>One practical instance is where it is easy to recycle is inside of for loops.  Instead of creating a new datastructure at each pass, you can reuse just one datastructure.  This dramatically improves performance.
+
+<p>I have a special convention for recycling datastructures used by procedures.  The first parameter to a procedure may be either null or a datastructure that needs to be recycled.  It could even be the same as one of the later input parameters if you want to instead change an existsing datastructure.  This is what it looks like:
+
+<blockquote>
+<code><pre>function f(result, arr,x,y,z){
+    if(!Array.isArray(arr)){  // typecheck like a good boy
+        throw "typeerror: function f(result, arr,x,y,z): parameter 'arr' must be an array!"; }
+    if(!result){
+        result = []; }
+    if(result != arr){  // if reference to arr is same as result we can skip this.
+        for(var i=0; i&lt;arr.length; ++i){
+            result[i] = arr[i]; } // copy input arr into result
+    }
+    result.push(x);
+    result.push(y);
+    result.push(z);
+    return result;
+}
+</pre></code>
+</blockquote>
+
+<p>You can see this technique used extensively in <a href="https://github.com/derekmc/polyfill3djs/blob/trunk/camera.js">this</a> project.
+
+<p>Doing this correctly can be tricky, because if you make mistakes you can get inconsistent or hard to find errors, depending on how the function is called.  I had a hard time finding one such bug when using this technique.
+
+<p>Recycling is an advanced technique challenging to use both extensively and correctly, but it's doable and can make your applications perform much better by reducing new memory allocations.

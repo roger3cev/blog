@@ -1,10 +1,9 @@
 body{
-  font-family: Verdana,Geneva,Arial,Sans-serif; 
-  font-size: 13px; color: #333;
+  font-family: Verdana,Geneva,Arial,Sans-serif;
   padding: 0px;
   margin: 0px;
-  background-color: #bbb;
-  background-image: -webkit-linear-gradient(top, #888 0%, #bbb 250px);
+  background-color: #fff;
+  
   padding-bottom: 30px;}
 .codesection{
   padding: 2px 12px;
@@ -12,19 +11,24 @@ body{
   margin-right: 12px;
   background-color: #fff;
   font-family: monospace;
+  overflow-x: scroll;
   font-size: 12px; }
 .post{
-  padding: 12px 20px;
-  margin-left: 72px;
-  margin-right: 72px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+  font-family: serif;
+  font-size: 15px; color: #333;
+  margin-left: 100px;
+  margin-right: 50px;
   max-width: 720px;
+  margin-top: 6px;
+  margin-bottom: 12px;
   background-color: #fff;
+  border: 0px solid black;
   border-radius: 10px;}
 .posttitle{
   text-decoration: none;
   font-size: 24px;
+  margin-top:0px;
+  margin-bottom:25px;
   font-weight: normal; }
 .posttitle a{
   text-decoration: none; }
@@ -32,12 +36,17 @@ a{
   color: #000000 }
 .pagetitle{
   text-decoration: none;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: normal;
-  padding: 35px;
-  padding-left: 92px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+  border-bottom: 2px solid black;
   background-color: #fff; 
   color: #000; }
+p{
+  line-height: 130%;
+  margin-bottom: 20px;}
 .pagetitle a{
   text-decoration: none; }
 .authorname{
@@ -45,6 +54,7 @@ a{
   color: #000;
   font-weight: normal; }
 .dateheader{
+  margin-top: 5px;
   font-size: 11px;
   font-weight: normal;
   color: #333; }
