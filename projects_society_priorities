@@ -1,0 +1,54 @@
+
+<link rel="stylesheet" type="text/css" href="http://derekmc.github.io/blog/blogstyle.css">
+
+<div class="pagetitle"><a href="http://derekmc.github.io/blog/">Code</a>
+  <div class="authorname">by Derek McDaniel</div>
+</div>
+ 
+<div class="post">
+ 
+<div class="dateheader">May 23, 2016</div>
+<div class="posttitle" name="intro"> <a href="http://derekmc.github.io/blog/index.html#projsocietypriority">Projects, Society, Priorities</a>
+</div>
+
+<p>I'm a little bit tired right now, so forgive me if my writing is a little hazy.
+
+<p>I have a lot of different interests: skateboarding, harmonica, video games, media... and programming.
+
+
+<p>Now, let's just look at programming:
+I have over 10 projects on github, 3 of which I have worked on consistently over extended periods of time.
+A few more I have ongoing plans for but haven't worked on as regularly.  That makes for about 5 or 6 active projects.
+
+<p>Overtime, I think my project ideas have gotten better. They have more specific focus, more achievable goals, more immediate usability.
+But still I struggle.  The challenge now is priorities.
+
+<p>Nothing we do is in a vacuum.  Without feedback and support for projects, it can be hard to perserve and deliver,
+unless you are really into an idea.  Our social context for programming is just as important as our low level competency
+and our high level creative abstractions.
+
+<p>Let's look at my primary active projects: amoeba-sketch, turnbased-data, trust-ledger, htmlsandbox, list2markupjs, and JSDataType.
+
+<p> My drawing program I find interesting, but there's a lot of choices in that space.  The best option would involve getting a high
+quality tablet.  My program is a creative workaround.  As for where it's at, it has enough implemented to be functional and usable,
+but not enough to be efficient and effortless.
+
+<p> turnbased-data is really cool.  I like the way I designed it and I see a lot of potential there.
+
+<p>htmlsandbox is a fun tool for doing coding experiments and facilitating a very lightweight scripting development environment.
+
+<p>list2markupjs and JSDataType are programming tools, I already use them in these other projects. I may deploy them as npm modules
+when I wrinkle out the details.
+
+<p>trust-ledger has good ideas.
+
+<p> None of these projects deserve the top spot on my priority list.
+
+<p>I'm gonna stop using github for everything, focus on it as a publishing tool for projects that really merit public development.
+I'll probably delete a few dead-end projects(not the active ones or historical ones).
+
+<p>I've been getting into bug tracking, reading so much Joel, which has made me dig up the good ol' "fossil" dvcs.
+
+<p> Night. Peace out peeps.
+
+<p> The moral of the story is, I'm not that invested in any of these right now, and want to give myself cognitive space to find better priorities.
